@@ -1,5 +1,3 @@
-Alastair Beaumont V00725310 CSC 320 Project
-
 
 This folder contains:
 
