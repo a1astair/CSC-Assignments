@@ -4,4 +4,4 @@ arriving customer needs to wait. It assumes a work-conserving system, i.e., the 
 customers waiting for service. Each customer is given a priority number, it assumes customers
 are given before hand and their description is stored in a file.
 
-This program uses threads to simulates the customers and schedules these threads appropiately using condition variables and mutexes
+This program uses threads to simulate the customers and schedules these threads appropiately using condition variables and mutexes
