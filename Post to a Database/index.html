@@ -1,0 +1,36 @@
+<html>
+ <head>
+  <title>Test</title>
+ </head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <button type="button">Click to input the data!</button>
+ <body>
+ <script type="text/javascript">
+ $(document).ready(function() {
+    var dataString = {
+        action: 'Horse',
+        name: 'Bojangles',
+        breed: 'Clydesdale',
+        height: '17',
+        weight: '757',
+        age: '7'
+    };
+    $("button").click(function() {    
+        //Post the string to the php file
+        $.ajax({
+            type: 'POST',
+            url: 'PostDB.php',
+            data: dataString,
+            cache: false,
+            success: function(response) {
+                console.log(response)
+            },
+            error: function(xhr) {
+                console.log(xhr)
+            }
+        });
+    });
+});
+ </script>
+ </body>
+</html>
